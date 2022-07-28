@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bank_card_name">Jhon Doe</string>
+    <string name="bank_card_number">0001 0002 0003 0004</string>
+    <string name="bank_card_cvv">123</string>
+    <string name="bank_card_validate">01/23</string>
+</resources>
