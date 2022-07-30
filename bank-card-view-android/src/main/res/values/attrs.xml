@@ -2,5 +2,8 @@
 <resources>
     <declare-styleable name="BankCardView">
         <attr name="isFrontCard" format="boolean"/>
+        <attr name="bankCardName" format="string|reference"/>
+        <attr name="bankCardNumber" format="string|reference"/>
+        <attr name="bankCardValidate" format="string|reference"/>
     </declare-styleable>
 </resources>

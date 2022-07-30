@@ -3,5 +3,6 @@
     <string name="bank_card_name">Jhon Doe</string>
     <string name="bank_card_number">0001 0002 0003 0004</string>
     <string name="bank_card_cvv">123</string>
-    <string name="bank_card_validate">01/23</string>
+    <string name="bank_card_validate">VALID\nTHRU</string>
+    <string name="bank_card_validate_fake">01/23</string>
 </resources>
