@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         binding.myBankCardView.bankCardValidate = "02/27"
         binding.myBankCardView.bankCardCVV = "007"
         binding.myBankCardView.bankCardLogo = BankCardView.CardLogo.MASTERCARD
+        binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.AMY_CHRISP
+
 
         binding.myBankCardView.setOnClickListener {
             startAnimation(animation, binding.myBankCardView, binding.myBankCardView, 180)

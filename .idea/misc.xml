@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/app/src/main/res/layout/activity_main.xml" value="0.1890625" />
+        <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/bank-card-view-android/src/main/res/drawable/bank_card_view_gradient_amy_chrisp.xml" value="0.198" />
         <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/bank-card-view-android/src/main/res/drawable/bank_card_view_gradient_blue.xml" value="0.1625" />
+        <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/bank-card-view-android/src/main/res/drawable/bank_card_view_gradient_heavy_rain.xml" value="0.198" />
+        <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/bank-card-view-android/src/main/res/drawable/bank_card_view_gradient_true_sunset.xml" value="0.198" />
         <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/bank-card-view-android/src/main/res/drawable/gradient.xml" value="0.3685" />
         <entry key="..\:/Users/Geovani/AndroidStudioProjects/bankcardview/bank-card-view-android/src/main/res/layout/bank_card_view.xml" value="0.5" />
       </map>
