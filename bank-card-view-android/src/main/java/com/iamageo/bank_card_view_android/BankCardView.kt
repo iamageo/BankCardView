@@ -14,6 +14,13 @@ class BankCardView @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
 
+    enum class CardLogo {
+        VISA,
+        MASTERCARD,
+        AMERICAN_EXPRESS,
+        CIELO
+    }
+
     var bankCardName: String? = ""
         set(value) {
             field = value
@@ -36,6 +43,19 @@ class BankCardView @JvmOverloads constructor(
         set(value) {
             field = value
             bank_card_view_cvv.text = field
+        }
+
+    var bankCardLogo: CardLogo? = null
+        set(value) {
+            field = value
+            when(value) {
+                CardLogo.CIELO -> { bank_card_view_logo.setImageResource(R.drawable.ic_bank_card_view_cielo) }
+                CardLogo.AMERICAN_EXPRESS -> { bank_card_view_logo.setImageResource(R.drawable.ic_bank_card_view_american_express) }
+                CardLogo.VISA -> { bank_card_view_logo.setImageResource(R.drawable.ic_bank_card_view_visa) }
+                CardLogo.MASTERCARD -> {bank_card_view_logo.setImageResource(R.drawable.ic_bank_card_view_mastercard) }
+                else -> {  }
+            }
+
         }
 
     var isFrontCard: Boolean = false
