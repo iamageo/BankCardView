@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding.myBankCardView.bankCardValidate = "02/27"
         binding.myBankCardView.bankCardCVV = "007"
         binding.myBankCardView.bankCardLogo = BankCardView.CardLogo.MASTERCARD
-        binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.AMY_CHRISP
+        binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.RIPE_MALINKA
 
 
         binding.myBankCardView.setOnClickListener {

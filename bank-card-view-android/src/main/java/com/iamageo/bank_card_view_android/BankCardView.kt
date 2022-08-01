@@ -1,7 +1,6 @@
 package com.iamageo.bank_card_view_android
 
 import android.content.Context
-import android.content.res.Resources
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -22,13 +21,11 @@ class BankCardView @JvmOverloads constructor(
         CIELO
     }
 
-    //cfd9df → #e2ebf0
-    //Amy Crisp
     enum class CardBackground {
-        HEAVY_RAIN,
+        RIPE_MALINKA,
         AMY_CHRISP,
         TRUE_SUNSET,
-
+        PURPLE_DIVISION
     }
 
     var bankCardName: String? = ""
@@ -72,8 +69,9 @@ class BankCardView @JvmOverloads constructor(
             field = value
             when(value) {
                 CardBackground.AMY_CHRISP -> { bank_card_view.background = ContextCompat.getDrawable(context, (R.drawable.bank_card_view_gradient_amy_chrisp)) }
-                CardBackground.HEAVY_RAIN -> {  bank_card_view.background = ContextCompat.getDrawable(context, (R.drawable.bank_card_view_gradient_heavy_rain))  }
+                CardBackground.RIPE_MALINKA -> {  bank_card_view.background = ContextCompat.getDrawable(context, (R.drawable.bank_card_view_gradient_ripe_malinka))  }
                 CardBackground.TRUE_SUNSET -> {  bank_card_view.background = ContextCompat.getDrawable(context, (R.drawable.bank_card_view_gradient_true_sunset))  }
+                CardBackground.PURPLE_DIVISION -> {  bank_card_view.background = ContextCompat.getDrawable(context, (R.drawable.bank_card_view_gradient_purple_division))  }
                 else -> {}
             }
         }
@@ -91,7 +89,6 @@ class BankCardView @JvmOverloads constructor(
 
     private fun setupCardBankBack() {
         showCardContent(isBackCard = true)
-        bank_card_view_number_reverse.text = bankCardNumber?.reversed()
     }
 
     private fun setupCardBankFront() {
