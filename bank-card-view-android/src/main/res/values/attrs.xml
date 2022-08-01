@@ -5,5 +5,6 @@
         <attr name="bankCardName" format="string|reference"/>
         <attr name="bankCardNumber" format="string|reference"/>
         <attr name="bankCardValidate" format="string|reference"/>
+        <attr name="bankCardCVV" format="string|reference"/>
     </declare-styleable>
 </resources>

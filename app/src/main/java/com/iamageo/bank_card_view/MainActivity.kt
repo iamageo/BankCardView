@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding.myBankCardView.bankCardName = "Jhon Doe"
         binding.myBankCardView.bankCardNumber = "0001 0002 0003 0004"
         binding.myBankCardView.bankCardValidate = "02/27"
+        binding.myBankCardView.bankCardCVV = "007"
 
         binding.myBankCardView.setOnClickListener {
             startAnimation(animation, binding.myBankCardView, binding.myBankCardView, 180)

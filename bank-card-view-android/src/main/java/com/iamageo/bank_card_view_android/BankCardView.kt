@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.Resources
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.bank_card_view.view.*
 
@@ -31,6 +32,12 @@ class BankCardView @JvmOverloads constructor(
             bank_card_view_validate_date.text = field
         }
 
+    var bankCardCVV: String ? = ""
+        set(value) {
+            field = value
+            bank_card_view_cvv.text = field
+        }
+
     var isFrontCard: Boolean = false
         set(value) {
             field = value
@@ -43,13 +50,18 @@ class BankCardView @JvmOverloads constructor(
 
 
     private fun setupCardBankBack() {
-
+        showCardContent(isBackCard = true)
+        bank_card_view_number_reverse.text = bankCardNumber?.reversed()
     }
 
     private fun setupCardBankFront() {
-
+        showCardContent(isBackCard = false)
     }
 
+    private fun showCardContent(isBackCard: Boolean) {
+        bankCardViewBack.visibility = if (isBackCard) View.VISIBLE else View.GONE
+        bankCardViewFront.visibility = if (isBackCard) View.GONE else View.VISIBLE
+    }
 
     init {
         LayoutInflater.from(context).inflate(R.layout.bank_card_view, this, true)
@@ -62,5 +74,6 @@ class BankCardView @JvmOverloads constructor(
         bankCardName = array.getString(R.styleable.BankCardView_bankCardName)
         bankCardNumber = array.getString(R.styleable.BankCardView_bankCardNumber)
         bankCardValidate = array.getString(R.styleable.BankCardView_bankCardValidate)
+        bankCardCVV = array.getString(R.styleable.BankCardView_bankCardCVV)
     }
 }
