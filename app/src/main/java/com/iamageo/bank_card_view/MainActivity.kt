@@ -11,21 +11,46 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    val animation: FlipBankCardViewAnimation? = null
+    private val animation: FlipBankCardViewAnimation? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        setupCardViewData()
+        setupBankCardColors()
+        setupBankCardClick()
+    }
+
+    private fun setupCardViewData() {
         binding.myBankCardView.bankCardName = "Jhon Doe"
         binding.myBankCardView.bankCardNumber = "0001 0002 0003 0004"
         binding.myBankCardView.bankCardValidate = "02/27"
         binding.myBankCardView.bankCardCVV = "007"
         binding.myBankCardView.bankCardLogo = BankCardView.CardLogo.MASTERCARD
         binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.RIPE_MALINKA
+    }
 
+    private fun setupBankCardColors() {
+        binding.imvAmyChrisp.setOnClickListener {
+            binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.AMY_CHRISP
+        }
 
+        binding.imvPurpleDivision.setOnClickListener {
+            binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.PURPLE_DIVISION
+        }
+
+        binding.imvRipeMalinka.setOnClickListener {
+            binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.RIPE_MALINKA
+        }
+
+        binding.imvTrueSunset.setOnClickListener {
+            binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.TRUE_SUNSET
+        }
+    }
+
+    private fun setupBankCardClick() {
         binding.myBankCardView.setOnClickListener {
             startAnimation(animation, binding.myBankCardView, binding.myBankCardView, 180)
         }

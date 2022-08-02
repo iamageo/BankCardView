@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#B1B0B0"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
 
     <com.iamageo.bank_card_view_android.BankCardView
         android:id="@+id/myBankCardView"
@@ -15,6 +15,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myBankCardView">
+
+        <ImageView
+            android:id="@+id/imvTrueSunset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bank_card_view_gradient_true_sunset" />
+
+        <ImageView
+            android:id="@+id/imvAmyChrisp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bank_card_view_gradient_amy_chrisp" />
+
+        <ImageView
+            android:id="@+id/imvPurpleDivision"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bank_card_view_gradient_purple_division" />
+
+        <ImageView
+            android:id="@+id/imvRipeMalinka"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bank_card_view_gradient_ripe_malinka" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
