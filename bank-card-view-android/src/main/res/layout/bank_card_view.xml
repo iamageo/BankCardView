@@ -6,7 +6,7 @@
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:layout_margin="24dp"
-    android:background="@drawable/bank_card_view_gradient_blue"
+    android:background="@drawable/bank_card_view_gradient_ripe_malinka"
     android:orientation="horizontal"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="parent"
