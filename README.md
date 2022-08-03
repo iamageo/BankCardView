@@ -12,6 +12,8 @@
     <img alt="stars" src="https://img.shields.io/github/stars/iamageo/bank-card-view?style=social"/>
 </p>
 
+## Versões
+Selecione a língua : [English](https://github.com/iamageo/bank-card-view/blob/master/README.eng.md), [Português](https://github.com/iamageo/bank-card-view/blob/master/README.md)
 
 ## Incluindo em seu projeto
 [![](https://jitpack.io/v/iamageo/bank-card-view.svg)](https://jitpack.io/#iamageo/bank-card-view)
