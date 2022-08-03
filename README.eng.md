@@ -1,6 +1,6 @@
-<h1 align="center">Visualização de cartão bancário</h1><br/>
-<p align="center">
-💳 Bank Card View é uma visualização de cartão simples e elegante com animação Flip.
+<h1 align="center">Bank Card View</h1><br/>
+<p align="center"> 
+💳 Bank Card View is a simple and elegant card view with Flip animation.
 </p>
 
 <p align="center">
@@ -12,11 +12,10 @@
     <img alt="stars" src="https://img.shields.io/github/stars/iamageo/bank-card-view?style=social"/>
 </p>
 
-
-## Incluindo em seu projeto
+## Including in your project
 [![](https://jitpack.io/v/iamageo/bank-card-view.svg)](https://jitpack.io/#iamageo/bank-card-view)
-### Grade
-Adicione os códigos abaixo ao seu arquivo **root** `build.gradle` (não ao seu arquivo build.gradle do módulo).
+### Gradle
+Add below codes to your **root** `build.gradle` file (not your module build.gradle file).
 ```gradle
 allprojects {
   repositories {
@@ -25,15 +24,15 @@ allprojects {
   }
 }
 ```
-E adicione um código de dependência ao arquivo `build.gradle` do seu **módulo**.
+And add a dependency code to your **module**'s `build.gradle` file.
 ```gradle
 dependencies {
     implementation 'com.github.iamageo:bank-card-view:1.0.0'
 }
 ```
 
-## Uso básico
-Adicione em seu arquivo de layout.
+## Basic Usage
+Add in you layout file.
 
 <img src="https://user-images.githubusercontent.com/26925002/182672634-81a2a84b-c8ee-41d1-851f-4d129278af38.png" align="right"/>
 
@@ -51,7 +50,7 @@ Adicione em seu arquivo de layout.
 />
 
 ```
-Chame sua atividade:
+Call in your Activity:
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
@@ -63,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
+        
         //attributes
         binding.myBankCardView.bankCardName = "Jhon Doe"
         binding.myBankCardView.bankCardNumber = "0001 0002 0003 0004"
@@ -71,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         binding.myBankCardView.bankCardCVV = "007"
         binding.myBankCardView.bankCardLogo = BankCardView.CardLogo.MASTERCARD
         binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.RIPE_MALINKA
-
+        
         //click event
         binding.myBankCardView.setOnClickListener {
             startAnimation(animation, binding.myBankCardView, binding.myBankCardView, 180)
@@ -80,44 +79,43 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## Atributos de visualização de cartão bancário
-Atributos | Tipo | Descrição
+## Bank Card View Attributes
+Attributes | Type | Description
 --- | --- | ---
-bankCardName | String | Nome do cartão.
-bankCardNumber | String | Número do cartão.
-bankCardValidate | String | Data de validade do cartão.
-bankCardCVV | String | Código de segurança do cartão.
-bankCardLogo | Int (drawable) | Logo do cartão.
-bankCardBackground | Int (drawable) | Plano de fundo para exibição.
+bankCardName | String | Name of card.
+bankCardNumber | String | Number of card.
+bankCardValidate | String | Validate date.
+bankCardCVV | String | Security code of card.
+bankCardLogo | Int (drawable) | Logo of card.
+bankCardBackground | Int (drawable) | Background for card view.
 
-## Tipos de logotipo
-[Fonte dos logotipos](https://vetores.org/)
+## Types of logo
+[Source of logos](https://vetores.org/)
 
-| VISTO | CIELO | MASTERCARD | EXPRESSO AMERICANO
+| VISA | CIELO | MASTERCARD | AMERICAN_EXPRESS
 | :---------------: | :---------------: | :---------------: | :---------------: |
-| <img src="https://vetores.org/wp-content/uploads/visa.png" align="center" width="50%"/> | <img src="https://vetores.org/wp-content/uploads/cielo.png" align="center" width="50%"/> | <img src="https://vetores.org/wp-content/uploads/mastercard.png" align="center" width="50%"/> | <img src="https://vetores.org/wp-content/uploads/american-express.png" align="center" width="50%"/>
+| <img src="https://vetores.org/wp-content/uploads/visa.png" align="center" width="50%"/>  | <img src="https://vetores.org/wp-content/uploads/cielo.png" align="center" width="50%"/>   |  <img src="https://vetores.org/wp-content/uploads/mastercard.png" align="center" width="50%"/>   | <img src="https://vetores.org/wp-content/uploads/american-express.png" align="center" width="50%"/>
 
-Para usar o logotipo do cartão:
+For use card logo, call:
 
 ```kotlin
 binding.myBankCardView.bankCardLogo = BankCardView.CardLogo.MASTERCARD
 ```
 
-## Tipos de fundo
-[Fonte dos fundos](https://webgradients.com/)
+## Types of background
+[Source of backgrounds](https://webgradients.com/)
 
 | RIPE_MALINKA |AMY_CHRISP | TRUE_SUNSET | PURPLE_DIVISION
 | :---------------: | :---------------: | :---------------: | :---------------: |
-| <img src="https://webgradients.com/public/webgradients_png/017%20Ripe%20Malinka.png" align="center" width="50%"/> | <img src="https://webgradients.com/public/webgradients_png/014%20Amy%20Crisp.png" align="center" width="50%"/> | <img src="https://webgradients.com/public/webgradients_png/021%20True%20Sunset.png" align="center" width="50%"/> | <img src="https://webgradients.com/public/webgradients_png/069%20Purple%20Division.png" align="center" width="50%"/> |
+| <img src="https://webgradients.com/public/webgradients_png/017%20Ripe%20Malinka.png" align="center" width="50%"/> | <img src="https://webgradients.com/public/webgradients_png/014%20Amy%20Crisp.png" align="center" width="50%"/>  | <img src="https://webgradients.com/public/webgradients_png/021%20True%20Sunset.png" align="center" width="50%"/>  | <img src="https://webgradients.com/public/webgradients_png/069%20Purple%20Division.png" align="center" width="50%"/> |
 
-Para usar os planos de fundo:
+For use backgrounds, call:
 
 ```kotlin
 binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.RIPE_MALINKA
 ```
 
-## Licença
-
+## License
 ```
     Copyright 2022 Geovani Amaral
 
