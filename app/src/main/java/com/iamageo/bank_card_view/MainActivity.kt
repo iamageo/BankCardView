@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.toolbar.setTitle("Personalização de cartão")
+        binding.toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24)
+
         setupCardViewData()
         setupBankCardColors()
         setupBankCardClick()
