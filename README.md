@@ -12,6 +12,10 @@
     <img alt="stars" src="https://img.shields.io/github/stars/iamageo/bank-card-view?style=social"/>
 </p>
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/26925002/182700648-48c7cd1c-6a79-41a4-bc6f-7971017d5709.png" alt="animated" width="50%" />
+</p>
+
 ## Versões
 Selecione a língua : [English](https://github.com/iamageo/bank-card-view/blob/master/README.eng.md), [Português](https://github.com/iamageo/bank-card-view/blob/master/README.md)
 
@@ -81,6 +85,10 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+
+## Exemplo de uso
+![20220803_162927](https://user-images.githubusercontent.com/26925002/182701061-2824d4cc-1049-435f-a8f0-98843e8d0a93.gif)
+
 
 ## Atributos de visualização de cartão bancário
 Atributos | Tipo | Descrição
