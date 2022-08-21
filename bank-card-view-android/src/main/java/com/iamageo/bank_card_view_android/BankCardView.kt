@@ -1,6 +1,7 @@
 package com.iamageo.bank_card_view_android
 
 import android.content.Context
+import android.text.Editable
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -34,11 +35,13 @@ class BankCardView @JvmOverloads constructor(
             bank_card_view_name.text = field
         }
 
-    var bankCardNumber: String? = ""
+    /*
+    var bankCardNumber: Editable? = null
         set(value) {
             field = value
             bank_card_view_number.text = field
         }
+     */
 
     var bankCardValidate: String? = ""
         set(value) {
@@ -109,7 +112,7 @@ class BankCardView @JvmOverloads constructor(
         val array = context.theme.obtainStyledAttributes(attrs, R.styleable.BankCardView, defStyleAttr, 0)
         isFrontCard = array.getBoolean(R.styleable.BankCardView_isFrontCard, true)
         bankCardName = array.getString(R.styleable.BankCardView_bankCardName)
-        bankCardNumber = array.getString(R.styleable.BankCardView_bankCardNumber)
+        //bankCardNumber = array.getString(R.styleable.BankCardView_bankCardNumber)
         bankCardValidate = array.getString(R.styleable.BankCardView_bankCardValidate)
         bankCardCVV = array.getString(R.styleable.BankCardView_bankCardCVV)
     }
