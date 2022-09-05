@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupCardViewData() {
         binding.myBankCardView.bankCardName = "Jhon Doe"
-        //binding.myBankCardView.bankCardNumber = "4705 9810 8148 0551"
+        binding.myBankCardView.bankCardNumber = "4705 9810 8148 0551"
         binding.myBankCardView.bankCardValidate = "02/27"
         binding.myBankCardView.bankCardCVV = "007"
         binding.myBankCardView.bankCardLogo = BankCardView.CardLogo.MASTERCARD

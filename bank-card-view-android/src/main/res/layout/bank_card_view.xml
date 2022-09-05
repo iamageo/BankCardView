@@ -19,9 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/bank_card_view_logo"
@@ -80,21 +78,19 @@
             app:layout_constraintTop_toBottomOf="@+id/bank_card_view_number" />
 
 
-        <EditText
+        <TextView
             android:id="@+id/bank_card_view_number"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/transparent"
-            android:hint="0000 0000 0000 0000"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="0.4"
+            android:text="@string/bank_card_number"
             android:textColor="#fff"
-            android:textCursorDrawable="@color/material_on_surface_stroke"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline_card_vertical"
-            app:layout_constraintTop_toBottomOf="@+id/bank_card_view_chip">
-
-        </EditText>
-
+            app:layout_constraintTop_toBottomOf="@+id/bank_card_view_chip" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_card_horizontal"
