@@ -126,6 +126,9 @@ Para usar os planos de fundo:
 binding.myBankCardView.bankCardBackground = BankCardView.CardBackground.RIPE_MALINKA
 ```
 
+## Hacktobefest 2022
+This project has been submitted for hacktobefest 2022. [See more here](https://hacktoberfest.com/)
+
 ## Licença
 
 ```
